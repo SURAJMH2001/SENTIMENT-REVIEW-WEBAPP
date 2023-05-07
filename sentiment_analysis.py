@@ -19,7 +19,7 @@ def get_user_text():
 #Store the user inputs
 user_text = get_user_text()
 
-model = joblib.load('src/SVC(pipeline)')
+model = joblib.load('src/MultinomialNB(pipeline)')
 
 sentiment = model.predict([user_text])
 if sentiment == 0:
